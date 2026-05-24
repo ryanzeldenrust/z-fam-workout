@@ -53,7 +53,19 @@
 .card:before,.mission:before,.block:before,.exercise:before{opacity:.78;height:18px;left:12px;right:12px;top:7px}
 .card:after,.mission:after,.block:after,.run-hero:after{height:30%;opacity:.72}
 .stat:after{content:"";position:absolute;left:8px;right:8px;top:5px;height:9px;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,0));pointer-events:none;mix-blend-mode:screen}
-.btn:active,.profile-btn:active,.nav button:active{transform:translateY(3px);box-shadow:2px 2px 0 #0b0812,0 5px 9px rgba(0,0,0,.22),inset 0 2px 0 rgba(255,255,255,.42),inset 0 -4px 8px rgba(0,0,0,.22)}</style>
+.btn:active,.profile-btn:active,.nav button:active{transform:translateY(3px);box-shadow:2px 2px 0 #0b0812,0 5px 9px rgba(0,0,0,.22),inset 0 2px 0 rgba(255,255,255,.42),inset 0 -4px 8px rgba(0,0,0,.22)}
+/* Phone viewport and safe-area fix */
+html,body{height:100%;min-height:100%;overflow:hidden}
+body{align-items:stretch;justify-content:center}
+#app{height:100svh;min-height:100svh;max-height:none}
+@supports(height:100dvh){#app{height:100dvh;min-height:100dvh}}
+.header{padding:calc(10px + env(safe-area-inset-top,0px)) 13px 11px!important;border-bottom-width:4px}
+.kicker{font-size:10px;line-height:1.05}.title{font-size:29px;line-height:.94}.subline{font-size:11px;margin-top:5px;max-width:220px}.week-badge{min-width:56px;min-height:50px;border-radius:11px}.week-badge b{font-size:20px}.week-badge span{font-size:8px}
+.app-header-logo{top:calc(6px + env(safe-area-inset-top,0px))!important;width:54px!important;height:54px!important;right:74px!important;opacity:.74}
+.screen{padding:10px 11px calc(84px + env(safe-area-inset-bottom,0px))!important}
+.nav{height:calc(66px + env(safe-area-inset-bottom,0px))!important;padding:7px 10px calc(8px + env(safe-area-inset-bottom,0px))!important;gap:7px;align-items:stretch}.nav button{min-height:46px;font-size:12px!important;border-radius:11px}
+@media(max-height:720px){.header{padding-top:calc(8px + env(safe-area-inset-top,0px))!important;padding-bottom:9px!important}.kicker{font-size:9px}.title{font-size:26px}.subline{font-size:10px;margin-top:4px}.week-badge{min-width:50px;min-height:45px}.app-header-logo{width:48px!important;height:48px!important;right:68px!important}.nav{height:calc(62px + env(safe-area-inset-bottom,0px))!important}.nav button{min-height:42px}}
+</style>
 </head>
 <body>
 <div id="app">
