@@ -32,6 +32,10 @@ That keeps the prebuilt training plan easy to edit without turning the app into 
 
 Version 1 does not use Firebase Authentication. The included Firestore rules are open read/write so the family can use the app quickly from GitHub Pages. Do not store private information in this database.
 
+## Reset Test Days
+
+Settings includes a small Admin panel with a Reset Test Days button. It clears saved workout and run/bike completions from Firestore, but keeps player profiles and max weights.
+
 ## Hosting On GitHub Pages
 
 Upload this folder to a GitHub repository and enable GitHub Pages for the repository root.
