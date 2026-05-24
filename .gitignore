@@ -1,0 +1,11 @@
+*.bak*
+.DS_Store
+Thumbs.db
+app.js
+styles.css
+supabase-schema.sql
+supabase-seed.sql
+Images/original-backgrounds/
+assets/*.svg
+assets/*.png
+!assets/.gitkeep
